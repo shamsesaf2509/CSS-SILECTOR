@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=>"en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,6 +60,25 @@
           *{
             border: 10px solid black;
           }
+          /* 
+         6. combinator silector syntax
+         element1,element2,element3....
+        *{
+          property:value;
+          }*/
+          div,span#a1,span.b1,a[href="https://app.shamspos.com"]{
+            display: inline-block;
+          }
+          /* 
+         7. Pesedo silector syntax
+         element1::silector
+        *{
+          property:value;
+          }*/
+         
+         h1::before{
+            content: url(https://media.tenor.com/2gpoHQxAIugAAAAi/double-thumbs-up-emoticon-emoticon.gif);
+         }
     </STYle>
     </head>
     <body>
@@ -67,7 +86,7 @@
     <span id="a1">CSS ID SILECTOR.# </span>
     <span class="b1">CLASS SILECTOR.</span>
     <a href="https://app.shamspos.com">go to shamspos.com</a>
-    
-    
+    <h1>pseudo eliment silector</h1>
+   
 </body>
 </html>
